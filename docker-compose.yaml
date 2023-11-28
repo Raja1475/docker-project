@@ -1,4 +1,4 @@
-network:
+networks:
   roboshop:
     driver: bridge
 
