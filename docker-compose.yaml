@@ -52,7 +52,5 @@ services:
       - catalouge
       - user
       - cart
-  
-
     
 
