@@ -11,7 +11,7 @@ services:
 
   catalouge:
     image: catalouge:v1
-    comtainer_name: catalouge
+    container_name: catalouge
     networks:
       - roboshop
     depends_on:
