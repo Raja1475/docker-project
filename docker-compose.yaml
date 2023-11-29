@@ -9,9 +9,9 @@ services:
     networks:
       - roboshop
 
-  catalouge:
-    image: catalouge:v1
-    container_name: catalouge
+  catalogue:
+    image: catalogue:v1
+    container_name: catalogue
     networks:
       - roboshop
     depends_on:
@@ -39,7 +39,7 @@ services:
       - roboshop
     depends_on:
       - redis
-      - catalouge
+      - catalogue
 
   mysql:
     image: mysql:v1
@@ -64,7 +64,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - catalouge
+      - catalogue
       - user
       - cart
     
