@@ -46,6 +46,15 @@ services:
     container_name: mysql
     networks:
       - roboshop
+    
+  shipping:
+    image: shipping:v1
+    container_name: shipping
+    networks:
+      - roboshop
+    depends_on:
+      - cart
+      - mysql
   
   web:
     image: web:v1
